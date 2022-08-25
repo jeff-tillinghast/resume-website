@@ -30,6 +30,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
       - run: sam build
-        working-directory: /
+        working-directory: resume-website
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
-        working-directory: /
+        working-directory: resume-website
