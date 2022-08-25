@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script>
+    fetch('https://foqx4ivf6l.execute-api.us-west-2.amazonaws.com/Prod/put')
+      .then(() => fetch('https://foqx4ivf6l.execute-api.us-west-2.amazonaws.com/Prod/get'))
+      .then(response => response.json())
+      .then((data) => {
+        document.getElementById('counter').innerText = data.count
+      })
+    </script>
+</head>
+
+<title>
+  Just a Test
+  </title>
+<body>
+  <p>Visitor Count:
+    <span id="counter" />
+  </body>
+  </html>
